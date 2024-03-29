@@ -20,7 +20,7 @@ import './index.less';
 export const Page: React.FC = () => {
   const lang = getLanguage();
   const i18n = getLocale();
-  const user = getSearchObj().user || 'visiky';
+  const user = getSearchObj().user || 'Bcy'; // getSearchObj().user ||
 
   const [, mode, changeMode] = useModeSwitcher({});
 
@@ -62,7 +62,7 @@ export const Page: React.FC = () => {
     }
 
     if (!mode) {
-      const link = `https://github.com/${user}/${user}/tree/${branch}`;
+      const link = `https://github.com/${user}/${user}/blob/${branch}`; // tree
       fetchResume(lang, branch, user)
         .then(data => store(data))
         .catch(() => {

@@ -9,6 +9,11 @@ module.exports = {
   flags: {
     DEV_SSR: false,
   },
+  // scripts: {
+  //   develop: 'PORT=8000 template=template1 user=bcy gatsby develop'
+  //   // port: 8000, // 默认端口号
+  //   // host: 'localhost?template=template1&user=bcy', // 指定主机地址并拼接请求参数
+  // },
   plugins: [
     {
       // https://developers.google.com/analytics/devguides/collection/gtagjs?hl=zh_CN
